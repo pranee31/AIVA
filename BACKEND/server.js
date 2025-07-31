@@ -12,6 +12,11 @@ app.use(cors());
 
 app.use("/api", chatRoutes);
 
+app.get("/", (req, res) => {
+  res.send("🚀 AIVA Backend is up and running!");
+});
+
+
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
     connectDB();
