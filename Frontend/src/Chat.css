@@ -1,0 +1,60 @@
+.chats {
+    flex-grow: 1;
+    padding: 2rem 15%; /* ✅ 5% padding on left and right */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* ✅ Center children horizontally */
+    overflow-y: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.userDiv, .gptDiv {
+    width: 100%;
+    max-width: 800px; /* ✅ Controls readable line length */
+    margin-bottom: 1rem;
+}
+
+
+
+.userDiv {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9rem;
+}
+
+
+.gptDiv {
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.userMessage {
+    background-color: #323232;
+    padding: 10px 20px;
+    border-radius: 14px;
+    margin-left: 15rem;
+    max-width: 500px;
+    width: fit-content;
+}
+
+.hljs {
+    border-radius: 14px !important;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+.chats::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chats::-webkit-scrollbar-track {
+  background: #323232; /* Match chatwindow background */
+}
+
+.chats::-webkit-scrollbar-thumb {
+  background-color: #323232;  /* Scrollbar handle */
+  border-radius: 4px;
+}
